@@ -1,38 +1,67 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(184, 202, 211);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fff;
+  border-bottom: 1px solid grey;
 }
 
-.App-link {
-  color: #61dafb;
+
+.sidebar {
+  border-right: 1px solid grey;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideBar .withSideBar {
+  width: 240px;
+}
+.sideBar .withoutSideBar {
+  width: 20px;
+}
+
+.headerWithSideBar {
+  margin-left: 200px;
+}
+
+.headerWithoutSideBar {
+  margin-left: 80px;
+}
+
+
+.wrapper {
+  height: 100%;
+}
+
+.wrapperWithSideBar {
+  margin-left: 280px;
+}
+
+.wrapperWithoutSideBar {
+  margin-left: 60px;
 }
