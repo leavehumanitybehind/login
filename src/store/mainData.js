@@ -8,17 +8,23 @@ const mainData = (state = initialState, action) => {
       };
     }
     case "UPDATE_DATA": {
-       return state.data.map(product => {
-           console.log(product, action.payload.id)
-        if (product.id === action.payload.id) {
-          return {...action.payload}
-        };
-        return product;
-    })
-}
-    
-        
-    
+      console.log(state);
+      return {
+        ...state,
+        data: [
+          ...state.data.map((product) => {
+            if (product.id === action.payload.id) {
+              product = {
+                ...action.payload,
+              };
+              console.log(product);
+            }
+            return product;
+          }),
+        ],
+      };
+    }
+
     default:
       return state;
   }

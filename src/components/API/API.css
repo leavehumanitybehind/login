@@ -2,14 +2,14 @@
   padding: 40px;
 }
 .settings__form {
-padding: 10px 30px;
+  padding: 10px 30px;
 }
 
 .settings__form-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10%;
+  gap: 6%;
   margin-bottom: 30px;
 }
 
@@ -18,22 +18,26 @@ padding: 10px 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .form__input-wrapper-checkbox {
-    gap: 20px;
-    display: flex;
-    align-items: center;
-  }
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
 input {
   padding: 14px;
-  
+
   border-radius: 8px;
   border: 1px solid grey;
 }
-
+input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 .form__input-wrapper--width input {
-   width: 350px; 
+  width: 350px;
 }
 
 .form__btn-wrapper {
@@ -44,15 +48,27 @@ input {
 table {
   width: 100%;
   text-align: left;
+  border-collapse: separate;
+  background-color: #fff;
+  border-spacing: 0;
+
+  border-radius: 8px;
+}
+thead tr th {
+  border-bottom: 1px solid rgb(133, 131, 131);
+  border-collapse: separate;
+}
+
+tr {
+  border-collapse: separate;
 }
 
 table th,
-td {
-  padding: 10px 8px;
+tbody td {
+  padding: 20px 15px;
 }
-
-thead {
-    border-bottom: 1px solid black;
+tbody {
+  padding: 20px;
 }
 
 tbody tr:hover {
@@ -66,9 +82,8 @@ tbody tr:hover {
 }
 
 .row {
-    display: flex;
-    gap: 10%;
-    align-items: center;
-    margin-bottom: 50px;
-
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  margin-bottom: 50px;
 }

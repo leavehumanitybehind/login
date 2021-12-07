@@ -1,11 +1,11 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import Card from "../UI/Card";
 import CustomButton from "../UI/CustomButton";
 import CustomCheckbox from "../UI/CustomCheckBox";
+import AllowedIP from "./AllowedIP";
 import "./API.css"
 const APIcreateForm = () => {
-    const api = useSelector(state => state.mainData.data)
     const dispatch = useDispatch()
     const history = useHistory()
 
@@ -22,7 +22,7 @@ const APIcreateForm = () => {
         let arr = []
         newItem.id = Math.random(1, 10000000);
         let date = new Date();
-        newItem.date = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+        newItem.date = date.toISOString().slice(0, 10)
 
 
         if (newItem.id && newItem.name && newItem.turnover) {
@@ -62,7 +62,7 @@ const APIcreateForm = () => {
                                 <label htmlFor="id">
                                     List of allowed IPs
                       </label>
-                                <input />
+                              <AllowedIP />
                             </div>
 
 

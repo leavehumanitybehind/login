@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import classes from "./NavBar.module.css"
+import classes from "./SideBar.module.css"
 const Navigation = () => {
 return (
     <ul className={classes.navigation}>

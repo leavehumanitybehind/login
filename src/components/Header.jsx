@@ -3,7 +3,7 @@ import "../App.css"
 
 const Header = (props) => {
     return (
-        <div  className={`header ${props.sideBar ? "headerWithSideBar" : "headerWithoutSideBar"}`}>
+        <div  className={`header ${props.sideBar ? "" : "headerWithoutSideBar"}`}>
         <h2>Title </h2>
         <nav>
             <button>Balance</button>

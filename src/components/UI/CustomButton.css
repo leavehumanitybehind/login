@@ -1,19 +1,22 @@
 .custom-btn {
-    padding: 12px 14px;
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.custom-btn:hover {
+  opacity: 0.8;
 }
 .prime {
-    background-color: rgb(7, 7, 102);
+  background-color: rgb(7, 7, 102);
 }
 
 .delete {
-    background-color: rgb(167, 19, 14);
+  background-color: rgb(167, 19, 14);
 }
 
 .success {
-    background-color: rgb(51, 223, 17);
+  background-color: rgb(51, 223, 17);
 }

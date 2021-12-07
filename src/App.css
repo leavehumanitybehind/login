@@ -23,44 +23,20 @@ html {
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid grey;
-}
-
-
-.sidebar {
-  border-right: 1px solid grey;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  padding: 20px;
-  transition: all 0.5s ease-in-out;
-}
-
-.sideBar .withSideBar {
-  width: 240px;
-}
-.sideBar .withoutSideBar {
-  width: 20px;
-}
-
-.headerWithSideBar {
-  margin-left: 200px;
+  padding-left: 260px;
+  transform: all 0.2s;
 }
 
 .headerWithoutSideBar {
-  margin-left: 80px;
+  padding-left: 100px;
 }
-
 
 .wrapper {
-  height: 100%;
+  margin-left: 260px;
+  transform: all 0.2s;
 }
 
-.wrapperWithSideBar {
-  margin-left: 280px;
-}
+
 
 .wrapperWithoutSideBar {
   margin-left: 60px;

@@ -1,6 +1,5 @@
-.navbar {
+.sidebar {
   border-right: 1px solid grey;
-  width: 240px;
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -9,8 +8,13 @@
   z-index: 1;
   padding: 20px;
   transition: all 0.5s ease-in-out;
+  width: 210px;
 }
 
+.withoutSideBar {
+  width: 40px;
+
+}
 .navbar__header {
   display: flex;
   justify-content: space-between;

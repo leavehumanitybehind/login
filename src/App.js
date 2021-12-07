@@ -4,7 +4,7 @@ import "./App.css";
 import API from "./components/API/API";
 import APIcreateForm from "./components/API/APICreateForm";
 import Header from "./components/Header";
-import NavBar from "./components/NavBar/NavBar";
+import SideBar from "./components/NavBar/SideBar";
 
 function App() {
   const [sideBar, showSideBar] = useState(true);
@@ -17,8 +17,8 @@ function App() {
       <Header
        sideBar={sideBar}
       />
-      <NavBar onChangeSideBar={hideSideBar} sideBar={sideBar} />
-      <div className={`${sideBar ? "wrapperWithSideBar" : "wrapperWithoutSideBar"}`}>
+      <SideBar onChangeSideBar={hideSideBar} sideBar={sideBar} />
+      <div className={`wrapper ${sideBar ? "wrapperWithSideBar" : "wrapperWithoutSideBar"}`}>
         <Switch>
           <Route path="/create-api">
             <APIcreateForm />
